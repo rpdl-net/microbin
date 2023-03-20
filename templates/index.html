@@ -4,9 +4,9 @@
     <br>
     <div id="settings">
         <div>
-            <label for="expiration">Expiration</label><br>
+            <label for="expiration">expiration</label><br>
             <select style="width: 100%;" name="expiration" id="expiration">
-                <optgroup label="Expire after">
+                <optgroup label="expire after">
                     {% if args.default_expiry == "1min" %}
                     <option selected value="1min">
                         {%- else %}
@@ -57,43 +57,43 @@
         </div>
         {% if args.enable_burn_after %}
         <div>
-            <label for="expiration">Burn After</label><br>
+            <label for="expiration">burn after</label><br>
             <select style="width: 100%;" name="burn_after" id="burn_after">
-                <optgroup label="Burn after">
+                <optgroup label="burn after">
                     {% if args.default_burn_after == 1 %}
                     <option selected value="1">
                         {%- else %}
                     <option value="1">
                         {%- endif %}
-                        First Read
+                        first read
                     </option>
                     {% if args.default_burn_after == 10 %}
                     <option selected value="10">
                         {%- else %}
                     <option value="10">
                         {%- endif %}
-                        10th Read
+                        10
                     </option>
                     {% if args.default_burn_after == 100 %}
                     <option selected value="100">
                         {%- else %}
                     <option value="100">
                         {%- endif %}
-                        100th Read
+                        100
                     </option>
                     {% if args.default_burn_after == 1000 %}
                     <option selected value="1000">
                         {%- else %}
                     <option value="1000">
                         {%- endif %}
-                        1000th Read
+                        1000
                     </option>
                     {% if args.default_burn_after == 10000 %}
                     <option selected value="10000">
                         {%- else %}
                     <option value="10000">
                         {%- endif %}
-                        10000th Read
+                        10000
                     </option>
                 </optgroup>
                 {% if args.default_burn_after == 0 %}
@@ -101,7 +101,7 @@
                     {%- else %}
                 <option value="0">
                     {%- endif %}
-                    No Limit
+                    unlimited
                 </option>
             </select>
         </div>
@@ -109,38 +109,38 @@
 
         {% if args.highlightsyntax %}
         <div>
-            <label for="syntax-highlight">Syntax</label><br>
+            <label for="syntax-highlight">syntax</label><br>
             <select style="width: 100%;" name="syntax-highlight" id="syntax-highlight">
-                <option value="none">None</option>
-                <optgroup label="Source Code">
-                    <option value="sh">Bash Shell</option>
-                    <option value="c">C</option>
-                    <option value="cpp">C++</option>
-                    <option value="cs">C#</option>
-                    <option value="pas">Delphi</option>
-                    <option value="erl">Erlang</option>
-                    <option value="go">Go</option>
-                    <option value="hs">Haskell</option>
-                    <option value="html">HTML</option>
-                    <option value="lua">Lua</option>
-                    <option value="lisp">Lisp</option>
-                    <option value="java">Java</option>
-                    <option value="js">JavaScript</option>
-                    <option value="kt">Kotlin</option>
-                    <option value="py">Python</option>
-                    <option value="php">PHP</option>
-                    <option value="r">R</option>
-                    <option value="rs">Rust</option>
-                    <option value="rb">Ruby</option>
-                    <option value="sc">Scala</option>
-                    <option value="swift">Swift</option>
+                <option value="none">none</option>
+                <optgroup label="source code">
+                    <option value="sh">bash</option>
+                    <option value="c">c</option>
+                    <option value="cpp">c++</option>
+                    <option value="cs">c#</option>
+                    <option value="pas">delphi</option>
+                    <option value="erl">erlang</option>
+                    <option value="go">go</option>
+                    <option value="hs">haskell</option>
+                    <option value="html">html</option>
+                    <option value="lua">lua</option>
+                    <option value="lisp">lisp</option>
+                    <option value="java">java</option>
+                    <option value="js">js</option>
+                    <option value="kt">kotlin</option>
+                    <option value="py">python</option>
+                    <option value="php">php</option>
+                    <option value="r">r</option>
+                    <option value="rs">rust</option>
+                    <option value="rb">ruby</option>
+                    <option value="sc">scala</option>
+                    <option value="swift">swift</option>
                 </optgroup>
                 <optgroup label="Descriptors">
                     <!-- no toml support ;-( -->
-                    <option value="json">TOML</option>
-                    <option value="yaml">YAML</option>
-                    <option value="json">JSON</option>
-                    <option value="xml">XML</option>
+                    <option value="json">toml</option>
+                    <option value="yaml">yaml</option>
+                    <option value="json">json</option>
+                    <option value="xml">xml</option>
                 </optgroup>
             </select>
         </div>
@@ -166,7 +166,7 @@
             {%- endif %}
         </div>
     </div>
-    <label>Content</label>
+    <label>content</label>
     <textarea style="width: 100%; min-height: 100px; margin-bottom: 2em" name="content" autofocus></textarea>
     <div style="overflow:auto;">
         {% if !args.no_file_upload %}
@@ -183,7 +183,7 @@
                 value="Read Only" /></b>
         {%- else %}
         <b>
-            <input style="width: 140px; float: right; background-color: #0076d18f;" type="submit" value="Save" />
+            <input style="width: 140px; float: right; background-color: #0076d18f;" type="submit" value="save" />
         </b>
         {%- endif %}
     </div>
