@@ -2,7 +2,7 @@ use harsh::Harsh;
 use lazy_static::lazy_static;
 
 lazy_static! {
-    pub static ref HARSH: Harsh = Harsh::builder().length(6).build().unwrap();
+    pub static ref HARSH: Harsh = Harsh::builder().length(8).build().unwrap();
 }
 
 pub fn to_hashids(number: u64) -> String {
