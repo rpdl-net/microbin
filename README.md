@@ -16,7 +16,7 @@ chown -R microbin:microbin /opt/microbin
 
 ## example /etc/systemd/system/microbin.service
 
-the following disables file upload and runs a bare-bones pastebin
+the following disables file upload and runs a bare-bones private pastebin
 
 ```
 [Unit]
@@ -34,5 +34,4 @@ ExecStart=/opt/microbin/target/release/microbin --hide-logo --hide-footer --hash
 WantedBy=multi-user.target
 ```
 
-change the [favicon](templates/assets/favicon.ico)
-add reverse proxy in front and you're done.
+change the [favicon](templates/assets/favicon.ico), edit the domain in the service file and add reverse proxy in front and you're done.
