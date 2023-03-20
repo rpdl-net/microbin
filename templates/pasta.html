@@ -2,15 +2,14 @@
 <div style="float: left">
   {% if pasta.content != "No Text Content" %}
   <button id="copy-text-button" class="copy-button" style="margin-right: 0.5rem">
-    Copy Text
+    copy text
   </button>
   {% if args.public_path.to_string() != "" && pasta.pasta_type == "url" %}
   <button id="copy-redirect-button" class="copy-button" style="margin-right: 0.5rem">
     Copy Redirect
   </button>
   {%- endif %}
-  <a style="margin-right: 1rem" href="{{ args.public_path }}/raw/{{pasta.id_as_animals()}}">Raw Text
-    Content</a>
+  <a style="margin-right: 1rem" href="{{ args.public_path }}/raw/{{pasta.id_as_animals()}}">raw</a>
   {%- endif %}
   {% if args.qr && args.public_path.to_string() != "" %}
   <a style="margin-right: 1rem" href="{{ args.public_path }}/qr/{{pasta.id_as_animals()}}">QR</a>
@@ -18,7 +17,7 @@
   {% if pasta.editable %}
   <a style="margin-right: 1rem" href="{{ args.public_path }}/edit/{{pasta.id_as_animals()}}">Edit</a>
   {%- endif %}
-  <a style="margin-right: 1rem" href="{{ args.public_path }}/remove/{{pasta.id_as_animals()}}">Remove</a>
+  <a style="margin-right: 1rem" href="{{ args.public_path }}/remove/{{pasta.id_as_animals()}}">remove</a>
 </div>
 <div style="float: right">
   <a style="margin-right: 0.5rem"
