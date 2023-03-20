@@ -52,7 +52,7 @@
             <img width=26 style="margin-bottom: -6px; margin-right: 0.5rem;"
                 src="{{ args.public_path }}/static/logo.png">
             {%- endif %} {% if args.title.as_ref().is_none() %}
-            MicroBin {%- else %} {{ args.public-path.as_ref().unwrap() }} {%- endif %}
+            MicroBin {%- else %} <a href="{{ args.public_path }}" style="text-decoration:none">{{ args.title.as_ref().unwrap() }}</a> {%- endif %}
         </b>
 
         <a href="{{ args.public_path }}/" style="margin-right: 0.5rem; margin-left: 0.5rem">new
